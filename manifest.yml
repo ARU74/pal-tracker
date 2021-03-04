@@ -6,6 +6,8 @@ applications:
       - route: pal-tracker-aru.apps.evans.pal.pivotal.io
     buildpacks:
       - java_buildpack_offline
+    services:
+      - tracker-database
     env:
       WELCOME_MESSAGE: Hello from the review environment
       JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'
